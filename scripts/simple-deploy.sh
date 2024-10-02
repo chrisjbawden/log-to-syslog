@@ -23,11 +23,13 @@ echo ""
 read -p "Enter the path to the log directory to monitor: " log_dir
 if [ -z "$log_dir" ]; then
     echo "Error: Log directory is required."
+    echo ""
     exit 1
 fi
 
 if [ ! -d "$log_dir" ]; then
     echo "Error: Directory does not exist. Please provide a valid directory."
+    echo ""
     exit 1
 fi
 echo ""
@@ -40,6 +42,7 @@ echo ""
 read -p "Enter the syslog server IP: " syslog_server_ip
 if [ -z "$syslog_server_ip" ]; then
     echo "Error: Syslog server IP is required."
+    echo ""
     exit 1
 fi
 
@@ -60,8 +63,10 @@ sleep 2
 # Confirm Docker run success
 if [ $? -eq 0 ]; then
     echo "Docker container '$docker_name' started successfully with the configuration!"
+    echo ""
 else
     echo "Error: Failed to start Docker container."
+    echo""
 fi
 
 
