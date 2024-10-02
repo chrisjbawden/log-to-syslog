@@ -1,1 +1,5 @@
-temp
+
+
+Simple deployment - 
+
+<code> curl -sL https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/simple-deply.sh | bash </code> 
