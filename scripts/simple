@@ -1,0 +1,15 @@
+input {
+  file {
+    path => "/usr/share/logstash/monitor/*"
+    start_position => "beginning"
+    sincedb_path => "/dev/null"
+  }
+}
+
+output {
+  syslog {
+    host => "\${SYSLOG_SERVER_IP}"
+    port => 514
+    protocol => "udp"
+  }
+}
