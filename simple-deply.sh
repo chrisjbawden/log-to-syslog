@@ -22,12 +22,16 @@ echo ""
 # Prompt user for the log directory to monitor
 read -p "Enter the path to the log directory to monitor: " log_dir
 if [ -z "$log_dir" ]; then
+    echo ""
     echo "Error: Log directory is required."
+    echo ""
     exit 1
 fi
 
 if [ ! -d "$log_dir" ]; then
+    echo ""
     echo "Error: Directory does not exist. Please provide a valid directory."
+    echo ""
     exit 1
 fi
 echo ""
@@ -39,7 +43,9 @@ echo ""
 # Prompt the user for the syslog server IP (environment variable)
 read -p "Enter the syslog server IP: " syslog_server_ip
 if [ -z "$syslog_server_ip" ]; then
+    echo ""
     echo "Error: Syslog server IP is required."
+    echo ""
     exit 1
 fi
 
