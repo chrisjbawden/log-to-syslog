@@ -57,10 +57,6 @@ docker run -d \
 echo ""
 sleep 2
 
-echo "reviewing .. "
-
-echo ""
-
 # Confirm Docker run success
 if [ $? -eq 0 ]; then
     echo "Docker container '$docker_name' started successfully with the configuration!"
