@@ -1,6 +1,6 @@
 
 
 Simple deployment - 
-```
-curl -sL https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/simple-deply.sh | bash
+
+<p><code>curl -sL https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/simple-deply.sh | bash </code></p>
 ```
