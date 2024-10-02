@@ -1,5 +1,6 @@
 
 
 Simple deployment - 
-
-`curl -sL https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/simple-deply.sh | bash`
+```
+curl -sL https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/simple-deply.sh | bash
+```
