@@ -52,7 +52,7 @@ docker run -d \
   -e SYSLOG_SERVER_IP="$syslog_server_ip" \
   -v "$log_dir:/usr/share/logstash/monitor" \
   docker.elastic.co/logstash/logstash:8.15.2 \
-  bin/bash -c "/bin/bash -c "curl -sL https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/scripts/deploy.sh | bash""
+  /bin/bash -c "/bin/bash -c "curl -sL https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/scripts/deploy.sh | bash""
 
 echo ""
 sleep 2
