@@ -3,5 +3,6 @@
 ie; legacy platform or hardware, in combination of a secheduled cronjob to export logs data via ssh to a file in the monitored directory of the logstash docker instace, it will be automatically ingested. Serving as a somewhat broker.
 
 Simple deployment - 
-
+```
 curl -sl https://raw.githubusercontent.com/chrisjbawden/log-to-syslog/refs/heads/main/scripts/simple-deploy.sh -o simple-deploy.sh && bash simple-deploy.sh
+```
